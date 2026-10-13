@@ -58,4 +58,5 @@ holdSolution.addEventListener("contextmenu",e=>e.preventDefault());
 $("next").onclick=()=>load((current+1)%tasks.length);
 $("editor").addEventListener("input",()=>{tasks[current].saved=$("editor").value});
 load(0);
+  window.addEventListener('paste',(e) => {e.preventDefault();alert("Stop it Bainan");});
 </script></body></html>
